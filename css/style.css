@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-size: 100%;
+}
+
+
+:root{
+/* ### Primary */
+
+--Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+
+/* ### Neutral */
+
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+
+
+
+
+}
+
+body{
+    height: 100vh;
+    font-size:1.250em;
+    display: grid;
+    place-items: center;
+    background-color:var(--Dark-Blue);
+    
+}
+
+
+.card-container{
+    width: 400px;
+    background-color: var(--Dark-Grayish-Blue);
+    color: var(--Grayish-Blue);
+    border-radius:10px;
+    position:relative;
+    text-align: center;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    position: relative;;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.card-container:has(h1){
+    font-size: 0.6em;
+    color:var(--Neon-Green);
+    letter-spacing:2px;
+    font-weight:200;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.card-container .advices{
+    font-size: 1.256em;
+    color: var(--Light-Cyan);
+   
+}
+
+.dado{
+    position:absolute;
+    bottom:0;
+
+
+}
+
+.line{
+    height: 10px;
+    border-radius: 50%;
+    width: 85%;
+    position: relative;
+    background-image: url("/images/pattern-divider-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+
+.btn{
+    position:absolute;
+    bottom: -20px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border-radius: 50%;
+    /* background-image: url(/images/icon-dice.svg);
+    background-position: center;
+    background-position: no-repeat;
+    background-size: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--Neon-Green);
+    cursor:pointer;
+    border: none;
+
+}
+
+
+.btn:hover{
+    box-shadow: var(--Neon-Green) 0 0 20px 0;
+}
+
+
+
+
+.attribution{
+    display: none;
+}
