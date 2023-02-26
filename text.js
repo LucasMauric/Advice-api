@@ -11,7 +11,6 @@ function advAPI(){
         
     
     }).then((response) =>{
-        console.log(response)
         const adv = response.slip.advice;
         const advID = response.slip.id;
         texto.textContent = adv;
